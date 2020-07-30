@@ -1,10 +1,10 @@
-import React from "react";
-import { TextField } from "./TextField";
+import React, { FC } from "react";
+import Form from "./components/Form";
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <div>
-      <TextField text="hello" />
+      <Form />
     </div>
   );
 };
