@@ -1,6 +1,12 @@
 import React from "react";
+import { TextField } from "./TextField";
 
 const App: React.FC = () => {
-  return <div>hi</div>;
+  return (
+    <div>
+      <TextField text="hello" />
+    </div>
+  );
 };
+
 export default App;
