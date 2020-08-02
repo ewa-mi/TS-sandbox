@@ -9,22 +9,27 @@ const Form: FC = () => {
     setInputText(event.currentTarget.value);
   };
 
+  const message = (
+    <h1>
+      Hello {inputText}, <br></br>welcome to <br></br>the jungle!
+    </h1>
+  );
   return (
-    <form>
-      <TextField text="Type your name" handleChange={handleChange} />
-      <button
-        className="btn-light"
-        type="button"
-        onClick={() => setShowText(true)}
-      >
-        display
-      </button>
-      {showText && (
-        <h1>
-          Hello {inputText}, <br></br>welcome to <br></br>the jungle!
-        </h1>
+    <>
+      {!showText && (
+        <form>
+          <TextField text="Type your name" handleChange={handleChange} />
+          <button
+            className="btn-light"
+            type="button"
+            onClick={() => setShowText(true)}
+          >
+            display message
+          </button>
+        </form>
       )}
-    </form>
+      {showText && message}
+    </>
   );
 };
 
