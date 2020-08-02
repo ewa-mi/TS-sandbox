@@ -16,9 +16,8 @@ const Posts: FC = () => (
         </div>
         <div className="post-text">
           <p>{item.description}</p>
-          <p>Written in: {item.writtenIn}</p>
-          <hr></hr>
-          <h3>Alternatives:</h3>{" "}
+          <p className="hr">Written in: {item.writtenIn}</p>
+          <h3>Alternatives:</h3>
           {item.alternatives.map((alternative, index) => (
             <p key={index} className="alternatives">
               {alternative}
