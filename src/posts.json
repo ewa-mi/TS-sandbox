@@ -23,7 +23,7 @@
     "id": 3,
     "tool": "PostgreSQL",
     "description": "relational database management system (table format)",
-    "alternatives": ["MySQL (relational)", "MongoDB (non-relational"],
+    "alternatives": ["MySQL", "MongoDB"],
     "category": "db management",
     "writtenIn": "C",
     "icon": "devicon-postgresql-plain colored",
@@ -35,7 +35,7 @@
     "description": "promise-based Node.js ORM library for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server.",
     "alternatives": ["Bookshelf"],
     "category": "ORM library",
-    "writtenIn": "",
+    "writtenIn": "?",
     "icon": "devicon-sequelize-plain colored",
     "type": "backend"
   }

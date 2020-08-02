@@ -1,6 +1,6 @@
 export type ItemPost = {
   id: number;
-  name: string;
+  tool: string;
   description: string;
   alternatives: string[];
   category: string;
