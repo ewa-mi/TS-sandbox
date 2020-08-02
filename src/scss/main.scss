@@ -19,6 +19,9 @@ h1 {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  @media (max-width: 375px) {
+    font-size: 4rem;
+  }
 }
 
 .btn {
