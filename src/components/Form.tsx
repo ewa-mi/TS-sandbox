@@ -33,7 +33,7 @@ const Form: FC = () => {
         <>
           {message}
           <Link to={`/posts`} className="btn-dark">
-            read posts
+            go to posts
           </Link>
         </>
       )}
