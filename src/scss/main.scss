@@ -6,7 +6,39 @@
 
 body {
   background: $secondary-color;
-  color: $primary-color;
+  color: white;
   font-family: $font-stack;
   line-height: 1.5;
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  background-image: $background-color-set;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: rgb(138, 224, 138);
+    color: $secondary-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.input {
+  font-size: $input-size;
+  outline: none;
+  padding: 5px;
+}
+
+form {
+  padding-top: 300px;
 }
