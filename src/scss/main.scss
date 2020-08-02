@@ -1,0 +1,12 @@
+@import "variables";
+
+* {
+  text-align: center;
+}
+
+body {
+  background: $secondary-color;
+  color: $primary-color;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
