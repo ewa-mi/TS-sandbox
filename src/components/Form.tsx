@@ -11,11 +11,19 @@ const Form: FC = () => {
 
   return (
     <form>
-      <TextField text="Type something" handleChange={handleChange} />
-      <button type="button" onClick={() => setShowText(true)}>
-        display text
+      <TextField text="Type your name" handleChange={handleChange} />
+      <button
+        className="btn-light"
+        type="button"
+        onClick={() => setShowText(true)}
+      >
+        display
       </button>
-      {showText && <p>{inputText}</p>}
+      {showText && (
+        <h1>
+          Hello {inputText}, <br></br>welcome to <br></br>the jungle!
+        </h1>
+      )}
     </form>
   );
 };

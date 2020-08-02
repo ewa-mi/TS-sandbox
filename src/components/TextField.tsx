@@ -14,8 +14,8 @@ interface Props {
 export const TextField: React.FC<Props> = ({ text, handleChange }) => {
   return (
     <div>
-      <h1>{text}</h1>
-      <input onChange={handleChange} />
+      <p>{text}</p>
+      <input className="input" onChange={handleChange} />
     </div>
   );
 };
