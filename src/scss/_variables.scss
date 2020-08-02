@@ -1,3 +1,36 @@
-$primary-color: steelblue;
-$secondary-color: skyblue;
-$font-stack: Arial, Helvetica, sans-serif;
+$primary-color: rgb(138, 224, 138);
+$secondary-color: rgb(16, 16, 16);
+$font-stack: arial, sans-serif;
+$radius: 10px;
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: rgb(173, 230, 173);
+  }
+}
+
+$input-size: 1.5rem;
+
+$background-color-set: linear-gradient(
+  to left,
+  plum,
+  violet,
+  purple,
+  indigo,
+  blue,
+  aqua,
+  green,
+  lightgreen,
+  yellow,
+  orange,
+  coral
+);

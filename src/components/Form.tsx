@@ -1,5 +1,6 @@
 import React, { useState, FC, ChangeEvent } from "react";
 import { TextField } from "./TextField";
+import { Link } from "react-router-dom";
 
 const Form: FC = () => {
   const [inputText, setInputText] = useState("");
@@ -9,14 +10,34 @@ const Form: FC = () => {
     setInputText(event.currentTarget.value);
   };
 
+  const message = (
+    <h1>
+      Hello {inputText}, <br></br>welcome to <br></br>the jungle!
+    </h1>
+  );
   return (
-    <form>
-      <TextField text="Type something" handleChange={handleChange} />
-      <button type="button" onClick={() => setShowText(true)}>
-        display text
-      </button>
-      {showText && <p>{inputText}</p>}
-    </form>
+    <>
+      {!showText && (
+        <form>
+          <TextField text="Type your name" handleChange={handleChange} />
+          <button
+            className="btn-light"
+            type="button"
+            onClick={() => setShowText(true)}
+          >
+            display message
+          </button>
+        </form>
+      )}
+      {showText && (
+        <>
+          {message}
+          <Link to={`/posts`} className="btn-dark">
+            go to posts
+          </Link>
+        </>
+      )}
+    </>
   );
 };
 
