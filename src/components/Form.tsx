@@ -1,5 +1,6 @@
 import React, { useState, FC, ChangeEvent } from "react";
 import { TextField } from "./TextField";
+import { Link } from "react-router-dom";
 
 const Form: FC = () => {
   const [inputText, setInputText] = useState("");
@@ -28,7 +29,14 @@ const Form: FC = () => {
           </button>
         </form>
       )}
-      {showText && message}
+      {showText && (
+        <>
+          {message}
+          <Link to={`/posts`} className="btn-dark">
+            read posts
+          </Link>
+        </>
+      )}
     </>
   );
 };
