@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "tool": "React",
+    "description": "library for building user interfaces, used for SPA or mobile apps (React Native)",
+    "alternatives": ["Angular", "Vue"],
+    "category": "JS library",
+    "writtenIn": "JavaScript",
+    "icon": "devicon-react-original colored",
+    "type": "frontend"
+  },
+  {
+    "id": 2,
+    "tool": "Redux",
+    "description": "state management tool for JS apps (commonly used with React and React Native, but can be also used with Angular, Vue and other frameworks)",
+    "alternatives": ["Flux", "Vuex"],
+    "category": "JS library",
+    "writtenIn": "JavaScript",
+    "icon": "devicon-redux- colored",
+    "type": "frontend"
+  },
+  {
+    "id": 3,
+    "tool": "PostgreSQL",
+    "description": "relational database management system (table format)",
+    "alternatives": ["MySQL", "MongoDB"],
+    "category": "db management",
+    "writtenIn": "C",
+    "icon": "devicon-postgresql-plain colored",
+    "type": "backend"
+  },
+  {
+    "id": 4,
+    "tool": "Sequelize",
+    "description": "promise-based Node.js ORM library for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server.",
+    "alternatives": ["Bookshelf"],
+    "category": "ORM library",
+    "writtenIn": "?",
+    "icon": "devicon-sequelize-plain colored",
+    "type": "backend"
+  }
+]
