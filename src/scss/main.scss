@@ -19,6 +19,9 @@ h1 {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  @media (max-width: 375px) {
+    font-size: 4rem;
+  }
 }
 
 .btn {
@@ -26,10 +29,6 @@ h1 {
     @extend %btn-shared;
     background-color: rgb(138, 224, 138);
     color: $secondary-color;
-  }
-  &-dark {
-    @extend %btn-shared;
-    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -42,3 +41,8 @@ h1 {
 form {
   padding-top: 300px;
 }
+
+i {
+  font-size: 70px;
+}
+

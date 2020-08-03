@@ -1,11 +1,34 @@
 import React, { FC } from "react";
+import { ItemPost } from "./model";
+import data from "../posts.json";
+import "../scss/posts.scss";
 
-const Posts: FC = () => {
-  return (
-    <div>
-      <h2>POSTS</h2>
+const Posts: FC = () => (
+  <div>
+    <h1>POSTS</h1>
+    <div className="container">
+      {data.map((item: ItemPost) => (
+        <div className="post" key={item.id}>
+          <h2>{item.tool}</h2>
+          <i className={item.icon}></i>
+          <div className="tags-area">
+            <p className="tag">{item.type}</p>
+            <p className="tag">{item.category}</p>
+          </div>
+          <div className="post-text">
+            <p>{item.description}</p>
+            <p className="hr">Written in: {item.writtenIn}</p>
+            <h3>Alternatives:</h3>
+            {item.alternatives.map((alternative, index) => (
+              <p key={index} className="alternatives">
+                {alternative}
+              </p>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default Posts;

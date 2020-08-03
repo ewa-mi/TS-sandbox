@@ -1,0 +1,55 @@
+@import "variables";
+
+.post {
+  border: 1px solid gray;
+  margin: 20px;
+  padding: 10px;
+}
+
+.tags-area {
+  display: flex;
+  justify-content: center;
+}
+
+%positioning {
+  width: fit-content;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 5px;
+}
+
+.tag {
+  background-color: white;
+  color: black;
+  @extend %positioning;
+}
+
+i {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.alternatives {
+  display: inline-flex;
+  border: 1px solid white;
+  @extend %positioning;
+}
+
+.hr {
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}

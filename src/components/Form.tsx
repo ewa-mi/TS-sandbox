@@ -25,14 +25,14 @@ const Form: FC = () => {
             type="button"
             onClick={() => setShowText(true)}
           >
-            display message
+            OK
           </button>
         </form>
       )}
       {showText && (
         <>
           {message}
-          <Link to={`/posts`} className="btn-dark">
+          <Link to={`/posts`} className="btn-light">
             go to posts
           </Link>
         </>
