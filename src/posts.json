@@ -48,5 +48,25 @@
     "writtenIn": "C, Perl, Tcl, Python",
     "icon": "devicon-git-plain colored",
     "type": ["backend", "frontend"]
+  },
+  {
+    "id": 6,
+    "tool": "TypeScript",
+    "description": "JavaScript superset that allows you to create static types",
+    "alternatives": ["JavaScript"],
+    "category": "language",
+    "writtenIn": "TypeScript",
+    "icon": "devicon-typescript-plain colored",
+    "type": ["backend", "frontend"]
+  },
+  {
+    "id": 7,
+    "tool": "Sass",
+    "description": "scripting language that is interpreted or compiled to CSS",
+    "alternatives": ["LESS", "PostCSS", "styled-components"],
+    "category": "language",
+    "writtenIn": "Ruby",
+    "icon": "devicon-sass-plain colored",
+    "type": ["frontend"]
   }
 ]
