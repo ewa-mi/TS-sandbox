@@ -11,12 +11,12 @@
   },
   {
     "id": 2,
-    "tool": "Redux",
-    "description": "state management tool for JS apps (commonly used with React and React Native, but can be also used with Angular, Vue and other frameworks)",
-    "alternatives": ["Flux", "Vuex"],
-    "category": "JS library",
+    "tool": "Vue",
+    "description": "viemodel framework for building user interfaces and SPA ",
+    "alternatives": ["Angular", "React"],
+    "category": "JS framework",
     "writtenIn": "JavaScript",
-    "icon": "devicon-redux- colored",
+    "icon": "devicon-vuejs-plain colored",
     "type": "frontend"
   },
   {
