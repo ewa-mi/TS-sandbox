@@ -1,11 +1,32 @@
-import React, { FC, useState } from "react";
-import { ItemPost } from "./model";
+import React, { FC, useState, useEffect } from "react";
+import { ItemPost, newPostsArray } from "./model";
 import Filters from "./Filters";
 import data from "../posts.json";
 import "../scss/posts.scss";
 
 const Posts: FC = () => {
   const [filters, setFilters] = useState<string[]>([]);
+  const [newPosts, setNewPosts] = useState<newPostsArray>([]);
+
+  let newPostsArray = [];
+
+  useEffect(() => {
+    if (filters.length) {
+      newPostsArray = data.filter((post) => {
+        let result = true;
+        for (let index = 0; index < filters.length; index++) {
+          if (!post.type.includes(filters[index])) {
+            result = false;
+          }
+        }
+        return result;
+      });
+    } else {
+      newPostsArray = data;
+    }
+
+    setNewPosts(newPostsArray);
+  }, [filters]);
   return (
     <div>
       <h1>POSTS</h1>
@@ -13,7 +34,7 @@ const Posts: FC = () => {
       <Filters filters={filters} setFilters={setFilters} />
 
       <div className="container">
-        {data.map((item: ItemPost) => (
+        {newPosts.map((item: ItemPost) => (
           <div className="post" key={item.id}>
             <h2>{item.tool}</h2>
             <i className={item.icon}></i>

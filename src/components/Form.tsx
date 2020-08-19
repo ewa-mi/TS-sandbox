@@ -18,7 +18,7 @@ const Form: FC = () => {
   return (
     <>
       {!showText && (
-        <form>
+        <form className="nameForm">
           <TextField text="Type your name" handleChange={handleChange} />
           <button
             className="btn-light"
