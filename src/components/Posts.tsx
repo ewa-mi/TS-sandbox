@@ -39,7 +39,9 @@ const Posts: FC = () => {
             <h2>{item.tool}</h2>
             <i className={item.icon}></i>
             <div className="tags-area">
-              <p className="tag">{item.type}</p>
+              {item.type.map((type, index) => (
+                <p key={index}>{type}</p>
+              ))}
               <p className="tag">{item.category}</p>
             </div>
             <div className="post-text">

@@ -6,7 +6,7 @@ export type ItemPost = {
   category: string;
   writtenIn: string;
   icon: string;
-  type: string;
+  type: string[];
 };
 
 export type newPostsArray = {
@@ -17,5 +17,5 @@ export type newPostsArray = {
   category: string;
   writtenIn: string;
   icon: string;
-  type: string;
+  type: string[];
 }[];
