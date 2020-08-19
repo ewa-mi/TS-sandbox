@@ -38,11 +38,18 @@ const Posts: FC = () => {
           <div className="post" key={item.id}>
             <h2>{item.tool}</h2>
             <i className={item.icon}></i>
+
             <div className="tags-area">
-              {item.type.map((type, index) => (
-                <p key={index}>{type}</p>
-              ))}
-              <p className="tag">{item.category}</p>
+              <>
+                {item.type.map((type, index) => (
+                  <p className={`tag tag--${type}`} key={index}>
+                    {type}
+                  </p>
+                ))}
+              </>
+              <div>
+                <p className="tag">{item.category}</p>
+              </div>
             </div>
             <div className="post-text">
               <p>{item.description}</p>

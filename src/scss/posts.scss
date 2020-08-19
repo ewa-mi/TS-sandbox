@@ -22,6 +22,12 @@
   background-color: white;
   color: black;
   @extend %positioning;
+  &--frontend {
+    background-color: yellow;
+  }
+  &--backend {
+    background-color: yellowgreen;
+  }
 }
 
 i {

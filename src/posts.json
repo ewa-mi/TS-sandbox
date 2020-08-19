@@ -44,7 +44,7 @@
     "tool": "Git",
     "description": "version-control system for tracking changes in source code during software development",
     "alternatives": ["Apache SVN", "Mercurial SCM", "CVS"],
-    "category": "version-control system",
+    "category": "version-control",
     "writtenIn": "C, Perl, Tcl, Python",
     "icon": "devicon-git-plain colored",
     "type": ["backend", "frontend"]
