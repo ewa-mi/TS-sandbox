@@ -10,7 +10,7 @@ const Filters: FC<{
     <div>
       <form>
         {labels.map((label) => (
-          <div key={label}>
+          <div className="filters" key={label}>
             <label>
               <input
                 type="checkbox"

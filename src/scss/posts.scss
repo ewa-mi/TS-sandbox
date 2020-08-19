@@ -59,3 +59,15 @@ i {
     grid-template-columns: 1fr;
   }
 }
+
+.filtersArea,
+.filters {
+  display: inline-flex;
+}
+
+.applyFiltersText,
+.filters {
+  margin: 0px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}

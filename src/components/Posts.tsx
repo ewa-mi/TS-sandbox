@@ -30,9 +30,10 @@ const Posts: FC = () => {
   return (
     <div>
       <h1>POSTS</h1>
-
-      <Filters filters={filters} setFilters={setFilters} />
-
+      <div className="filtersArea">
+        <p className="applyFiltersText">Apply filters:</p>
+        <Filters filters={filters} setFilters={setFilters} />
+      </div>
       <div className="container">
         {newPosts.map((item: ItemPost) => (
           <div className="post" key={item.id}>
