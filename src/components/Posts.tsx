@@ -8,9 +8,9 @@ const Posts: FC = () => {
   const [filters, setFilters] = useState<string[]>([]);
   const [newPosts, setNewPosts] = useState<newPostsArray>([]);
 
-  let newPostsArray = [];
-
   useEffect(() => {
+    let newPostsArray: any = [];
+
     if (filters.length) {
       newPostsArray = data.filter((post) => {
         let result = true;
@@ -27,6 +27,7 @@ const Posts: FC = () => {
 
     setNewPosts(newPostsArray);
   }, [filters]);
+
   return (
     <div>
       <h1>POSTS</h1>
