@@ -7,7 +7,7 @@
     "category": "JS library",
     "writtenIn": "JavaScript",
     "icon": "devicon-react-original colored",
-    "type": "frontend"
+    "type": ["frontend"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "category": "JS framework",
     "writtenIn": "JavaScript",
     "icon": "devicon-vuejs-plain colored",
-    "type": "frontend"
+    "type": ["frontend"]
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "category": "db management",
     "writtenIn": "C",
     "icon": "devicon-postgresql-plain colored",
-    "type": "backend"
+    "type": ["backend"]
   },
   {
     "id": 4,
@@ -37,6 +37,36 @@
     "category": "ORM library",
     "writtenIn": "?",
     "icon": "devicon-sequelize-plain colored",
-    "type": "backend"
+    "type": ["backend"]
+  },
+  {
+    "id": 5,
+    "tool": "Git",
+    "description": "version-control system for tracking changes in source code during software development",
+    "alternatives": ["Apache SVN", "Mercurial SCM", "CVS"],
+    "category": "version-control",
+    "writtenIn": "C, Perl, Tcl, Python",
+    "icon": "devicon-git-plain colored",
+    "type": ["backend", "frontend"]
+  },
+  {
+    "id": 6,
+    "tool": "TypeScript",
+    "description": "JavaScript superset that allows you to create static types",
+    "alternatives": ["JavaScript"],
+    "category": "language",
+    "writtenIn": "TypeScript",
+    "icon": "devicon-typescript-plain colored",
+    "type": ["backend", "frontend"]
+  },
+  {
+    "id": 7,
+    "tool": "Sass",
+    "description": "scripting language that is interpreted or compiled to CSS",
+    "alternatives": ["LESS", "PostCSS", "styled-components"],
+    "category": "language",
+    "writtenIn": "Ruby",
+    "icon": "devicon-sass-plain colored",
+    "type": ["frontend"]
   }
 ]
