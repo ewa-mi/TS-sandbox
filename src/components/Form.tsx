@@ -3,14 +3,14 @@ import { TextField } from "./TextField";
 import { Link } from "react-router-dom";
 
 const Form: FC = () => {
-  const [inputText, setInputText] = useState("");
-  const [showText, setShowText] = useState(false);
+  const [inputText, setInputText] = useState<string>("");
+  const [showText, setShowText] = useState<boolean>(false);
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     setInputText(event.currentTarget.value);
   };
 
-  const message = (
+  const message: JSX.Element = (
     <h1>
       Hello {inputText}, <br></br>welcome to <br></br>the jungle!
     </h1>
